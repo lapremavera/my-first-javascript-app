@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+
+    <script src="mijnscript.js"></script>
+    <body>
+        <h1>Welkom</h1>
+
+        <script>
+            document.write("Dit is JavaScript " + (5*8));    //zelfde als Sout
+            document.writeln("'t Is iets nieuws. ")
+            console.log("Dit is nog wat inhoud." );     //zal de inhoud niet afficheren.
+
+            var i = 5;
+
+            var s = "Hello, ";
+            var t = 'hello, ';        //beide zijn juist.
+            var v= `hello!`;         // vooral voor ES6
+
+            var d = new Date();
+
+            window.alert("hello!");     //een ppo-up die niet zomaar weggaat.
+            window.prompt("How old are you?");      //ook een pop up, maar je vult iets in
+
+            //public int berekenLeeftijd(int i){} =
+            berekenLeeftijd(5,10,7, "whatever");    //ook al heb je 3 parameters gedefinieert, mag je er een 4de bijvoegen
+
+            function berekenLeeftijd(i,j,k) {
+                return i+j*k;
+
+            }
+
+            document.writeln(i+3);
+            document.writeln(s,t,v);
+            document.writeln(d.getFullYear());
+
+
+        </script>
+        <h2>Einde pagina</h2>
+    </body>
+</html>
